@@ -1,0 +1,1 @@
+# lcu-empty-resource-group
