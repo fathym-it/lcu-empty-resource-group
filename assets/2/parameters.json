@@ -1,0 +1,7 @@
+{
+  "SSH_PUBLIC_KEY": {
+    "type": "az:sshkey:create|confirm",
+    "RESOURCE_NAME": "resourceGroup",
+    "AZURE_CLOUD_LOOKUP": "cloudLookup"
+  }
+}

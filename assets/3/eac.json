@@ -1,0 +1,39 @@
+{
+  "Applications": {
+    "alfresco-api": {
+      "Application": {
+        "Description": "Alfresco API",
+        "Name": "Alfresco API"
+      },
+      "LookupConfig": {
+        "PathRegex": "/alfresco.*"
+      },
+      "LowCodeUnit": {
+        "APIRoot": "http://{{PUBLIC_IP_ADDRESS_1}}",
+        "Security": "~",
+        "Type": "API"
+      },
+      "Processor": {
+        "InboundPath": "alfresco",
+        "Type": "Proxy"
+      }
+    },
+    "alfresco-admin": {
+      "Application": {
+        "Description": "Alfresco Admin",
+        "Name": "Alfresco Admin"
+      },
+      "LookupConfig": {
+        "PathRegex": "/.*"
+      },
+      "LowCodeUnit": {
+        "SPARoot": "http://{{PUBLIC_IP_ADDRESS_1}}",
+        "Type": "SPA"
+      },
+      "Processor": {
+        "InboundPath": "/",
+        "Type": "Proxy"
+      }
+    }
+  }
+}

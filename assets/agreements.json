@@ -1,0 +1,10 @@
+{
+    "az:bitnami:alfrescocommunity:201602": {
+      "Name": "Alfresco Community by Bitnami",
+      "type": "az",
+      "publisher": "bitnami",
+      "offer": "alfrescocommunity",
+      "sku": "201602"
+    }
+  }
+  
