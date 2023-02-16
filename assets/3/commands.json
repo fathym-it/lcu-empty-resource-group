@@ -1,9 +1,0 @@
-{
-    "ADMIN_PASSWORD": {
-        "Type": "LogParser.VirtualMachines.BootDiagnostics",
-        "EaC": "Environments[$#.PrimaryEnvironment]=>Clouds[{{AZURE_CLOUD_LOOKUP}}]=>ResourceGroups[{{RESOURCE_NAME}}]",
-        "Resource": "{{RESOURCE_NAME}}-1",
-        "Regex": "Setting Bitnami application password to '(?<Password>.*)' .*",
-        "Group": "Password"
-    }
-}
